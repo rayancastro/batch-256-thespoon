@@ -1,0 +1,13 @@
+<h1>Restaurants</h1>
+
+<form action="/restaurants" method="get">
+  <input type="text" name="food_type" placeholder="What kind of food?">
+  <input type="submit">
+</form>
+
+
+<ul>
+  <% @restaurants.each do |key, restaurant| %>
+    <li>  <%= link_to restaurant[:name], restaurant_path(key) %></li>
+  <% end %>
+</ul>

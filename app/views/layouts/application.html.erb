@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <div>
+      <%= link_to "Home", root_path %>
+      <%= link_to "About", about_path %>
+      <%= link_to "Contact", contact_path %>
+      <%= link_to "Restaurants", restaurants_path %>
+    </div>
+    <h1>The Spoon</h1>
     <%= yield %>
+    <footer>
+
+      Made with <3 at Le Wagon
+    </footer>
   </body>
 </html>
